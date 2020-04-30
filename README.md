@@ -34,3 +34,17 @@ Scheduler 排程器檔案內容會隨裝置種類而有不同，I/O Scheduler �
     # echo 1000 > /cgroup/high/blkio.weight
     # echo 100 > /cgroup/low/blkio.weight
     
+簡單的腳本：
+
+    // blkio_test.sh
+    
+    
+    # ! /bin/sh
+    
+    #  blkio_test.sh
+    # Test Script for Block IO Controller
+    # read /mnt/sdb/low.dat($flow)as cgroup $cg_low
+    # and read /mnt/sdb/high.dat($fhigh)as cgroup $ cg_high simultaneously.
+    #
+    # $1: cgroup path for lower priority (--> $cg_low)
+    # $2: cgroup path for higher priority (--> $cg_high )
