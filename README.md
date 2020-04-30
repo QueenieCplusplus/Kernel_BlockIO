@@ -14,3 +14,7 @@ Block IO 是 Cgroup 子系統之一，實作部分在 I/O scheduler 輸出入排
     
 Scheduler 排程器檔案內容會隨裝置種類而有不同，I/O Scheduler 用於 Block Device （磁碟）區塊裝置上。
 
+掛載後使用選項傳入：
+
+    # mount -t cgroup -o bliko cgroup /cgroup
+
