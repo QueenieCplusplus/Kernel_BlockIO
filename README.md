@@ -29,4 +29,8 @@ Scheduler 排程器檔案內容會隨裝置種類而有不同，I/O Scheduler �
     # mkdir /cgroup/low
 
 優先程度下設定 weight 權重值：
+
+    // 初始值為 500
+    # echo 1000 > /cgroup/high/blkio.weight
+    # echo 100 > /cgroup/low/blkio.weight
     
