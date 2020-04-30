@@ -23,8 +23,10 @@ Scheduler 排程器檔案內容會隨裝置種類而有不同，I/O Scheduler �
     # echo cfq > /sys/class/block/sdb/queue/scheduler
     $ cat /sys/class/block/sdb/queue/scheduler
     
-建立優先 high & low 程度群組:
+建立優先 high & low 程度群組：
 
     # mkdir /cgroup/high
     # mkdir /cgroup/low
 
+優先程度下設定 weight 權重值：
+    
